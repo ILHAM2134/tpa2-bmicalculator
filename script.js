@@ -19,7 +19,7 @@ const calculate = () => {
 	if (height != "" && weight != "" && !isNaN(height) && !isNaN(weight)) {
 		const { bmivalue, status } = formula(height, weight);
 
-		alert(`your BMI value is ${bmivalue}. status : ${status}`);
+		alert(`your BMI value is ${bmivalue.toFixed(1)}   |   status : ${status}`);
 	}
 
 	clear();
