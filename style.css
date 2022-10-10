@@ -1,0 +1,99 @@
+body {
+	margin: 0;
+	padding: 0;
+	min-height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-family: sans-serif;
+	background-color: black;
+	color: white;
+	font-family: "Dosis", sans-serif;
+}
+
+.container .card .icon {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: #2c73df;
+}
+
+.container .card .icon .ri-calculator-line {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	font-size: 80px;
+	color: #fff;
+}
+
+.container .card .slide {
+	width: 300px;
+	height: 200px;
+	transition: 0.5s;
+}
+
+.container .card .slide.slide1 {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	z-index: 1;
+	transition: 0.7s;
+	transform: translateY(100px);
+}
+
+.container .card:hover .slide.slide1 {
+	transform: translateY(0px);
+}
+
+.container .card .slide.slide2 {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 20px;
+	box-sizing: border-box;
+	transition: 0.8s;
+	transform: translateY(-100px);
+	box-shadow: 0 20px 40px rgba(255, 255, 255, 0.4);
+}
+
+.container .card:hover .slide.slide2 {
+	transform: translateY(0);
+}
+
+.container-calculator {
+	width: 300px;
+	height: 300px;
+	text-align: center;
+	position: relative;
+}
+
+.height-container {
+	margin-bottom: 30px;
+}
+
+.height,
+.weight {
+	margin: 0 0 5px 0;
+}
+
+button.submit:hover {
+	background-color: black;
+	color: white;
+}
+
+.height-warning,
+.weight-warning {
+	background-color: white;
+	color: red;
+}
+
+div.result {
+	background-color: white;
+	color: white;
+	align-items: center;
+}

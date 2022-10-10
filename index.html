@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@300;600&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+    <title>BMI Calculator</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="card">
+            <div class="slide slide1">
+                <div class="content">
+                    <div class="icon">
+                        <i class="ri-calculator-line" aria-hidden="true"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="slide slide2">
+                <div class="content">
+                    <div class="container-calculator">
+                        <h1 class="title">BMI Calculator</h1>
+
+                        <div class="height-container">
+                            <p class="height">Input your height (cm)</p>
+                            <input type="text" name="input-height" id="input-height">
+                            <p class="height-warning"></p>
+                        </div>
+
+                        <div class="width-container">
+                            <p class="weight">Input your weight (kg)</p>
+                            <input type="text" name="input-weight" id="input-weight">
+                            <p class="weight-warning"></p>
+                        </div>
+
+                        <button class="submit">Calculate</button>
+                    </div>
+                    <div class="result">
+                        <h1 class="result-bmi"></h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+
+</html>
